@@ -12,7 +12,7 @@ int main(){
   int fd = open("story", O_APPEND | O_RDWR);
   int shm = shmget(mKEY, sizeof(int), 0);
   int *size = shmat(shm, 0, 0);
-  printf("%d\n", *size);
+  //printf("%d\n", *size);
   
   get_line(fd, *size);
   
