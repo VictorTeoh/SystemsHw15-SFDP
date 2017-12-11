@@ -18,5 +18,5 @@ void create_all();
 void remove_all();
 void view_story();
 
-void get_line(int fd, int size);
-void write_line(int fd, char * line);
+void get_line(int, int);
+void write_line(int, char*);
